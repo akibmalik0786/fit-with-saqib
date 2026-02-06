@@ -1,0 +1,93 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  text-align: center;
+}
+
+header {
+  background: #111;
+  color: white;
+  padding: 20px;
+}
+
+.products {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.product {
+  background: white;
+  width: 300px;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+
+.product img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.price {
+  font-size: 20px;
+  color: green;
+  font-weight: bold;
+}
+
+.price span {
+  font-size: 14px;
+  color: #555;
+}
+
+.rating {
+  color: orange;
+  font-size: 15px;
+}
+
+button {
+  padding: 12px;
+  width: 100%;
+  background: green;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background: darkgreen;
+}
+
+/* FORM */
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+}
+
+.form-box {
+  background: white;
+  width: 300px;
+  margin: 100px auto;
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.form-box input,
+.form-box textarea {
+  width: 100%;
+  margin: 8px 0;
+  padding: 10px;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  cursor: pointer;
+}

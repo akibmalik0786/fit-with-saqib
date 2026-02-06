@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Fit With Saqib</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>💪 Fit With Saqib</h1>
+  <p>Fitness Products • Cash on Delivery</p>
+</header>
+
+<section class="products">
+
+  <div class="product">
+    <img src="https://via.placeholder.com/300x220" alt="Sauna Waist Trimmer">
+    <h2>Sauna Waist Trimmer Belt for Women</h2>
+    <p class="rating">⭐ 4.8 / 5</p>
+    <p class="price">₹140 <span>COD</span></p>
+    <button onclick="openForm('Sauna Waist Trimmer Belt')">Buy Now</button>
+  </div>
+
+</section>
+
+<!-- ORDER FORM -->
+<div id="orderForm" class="modal">
+  <div class="form-box">
+    <h3>Order Details (COD)</h3>
+
+    <input id="name" placeholder="Full Name">
+    <input id="phone" placeholder="Mobile Number">
+    <textarea id="address" placeholder="Full Address"></textarea>
+
+    <button onclick="sendWhatsApp()">Place Order</button>
+    <span class="close" onclick="closeForm()">✖</span>
+  </div>
+</div>
+
+<footer>
+  <p>© 2026 Fit With Saqib</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
