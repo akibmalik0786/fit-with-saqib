@@ -32,3 +32,4 @@ Address: ${address}`;
 
   window.location.href = url;
 }
+
