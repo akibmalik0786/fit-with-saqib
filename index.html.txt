@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Fit With Saqib</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1 style="text-align:center">💪 Fit With Saqib</h1>
+
+<div id="products" class="products"></div>
+
+<script>
+let products = JSON.parse(localStorage.getItem("products")) || [];
+const box = document.getElementById("products");
+
+products.forEach(p=>{
+  box.innerHTML += `
+    <div class="card">
+      <img src="${p.img}">
+      <h3>${p.name}</h3>
+      <p>${p.desc}</p>
+      <p class="price">₹${p.price} COD</p>
+      <a href="https://wa.me/919781468942">Buy on WhatsApp</a>
+    </div>`;
+});
+</script>
+
+</body>
+</html>
+

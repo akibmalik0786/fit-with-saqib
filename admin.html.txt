@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Admin Panel - Fit With Saqib</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2 style="text-align:center">🔐 Admin Panel</h2>
+
+<div class="admin-box">
+  <input type="password" id="pass" placeholder="Admin Password">
+  <button onclick="login()">Login</button>
+</div>
+
+<div id="panel" style="display:none" class="admin-box">
+  <h3>Add Product</h3>
+  <input id="pname" placeholder="Product Name">
+  <input id="pprice" placeholder="Price">
+  <input id="pimg" placeholder="Image URL">
+  <textarea id="pdesc" placeholder="Description"></textarea>
+  <button onclick="addProduct()">Add Product</button>
+
+  <h3>All Products</h3>
+  <div id="list"></div>
+</div>
+
+<script src="admin.js"></script>
+</body>
+</html>

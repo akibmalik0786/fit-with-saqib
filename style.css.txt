@@ -1,0 +1,12 @@
+
+body { font-family: Arial; background:#f4f4f4; }
+.products { display:flex; flex-wrap:wrap; justify-content:center; }
+.card {
+  background:#fff; width:250px; margin:10px; padding:10px;
+  border-radius:8px; text-align:center;
+}
+.card img { width:100%; }
+.price { color:green; font-weight:bold; }
+.admin-box { width:300px; margin:20px auto; }
+.admin-box input, textarea { width:100%; margin:5px 0; }
+button { padding:8px; }
